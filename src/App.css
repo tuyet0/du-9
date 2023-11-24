@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container, .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.form .inner-title {
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.button:hover {
+  background: orange;
+  color: #fff;
+}
+
+.button-main {
+  background: orange;
+  color: #fff;
+  border-color: orange;
+}
+
+.button-main:hover {
+  background: #FF5722;
+}
+
+.button[disabled] {
+  cursor: no-drop;
+  background: #f0f0f0;
+  border-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
